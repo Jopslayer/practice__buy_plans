@@ -164,3 +164,7 @@ tbody{
         padding: 10px;
     }
 }
+@media screen and (max-width: 450px){
+    .--4c, c5H{
+        display: none;
+    }
