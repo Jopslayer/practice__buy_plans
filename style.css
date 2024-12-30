@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "Be Vietnam Pro";
+    src: url(tipografias/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf);
+}
+
+:root{
+    --bg-color: #FFFFFF;
+    --gris-color1: #F8FAFC;
+    --gris-color2: #E5E7EB;
+    --gris-color3: #4D556266;
+    --blue1-color: #263FA9;
+    --padding-propor: 30px;
+    --borderR-propor: 15px;
+}
+
+body{
+    font-family: "Be Vietnam Pro";
+    background-color: var(--bg-color);
+}
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,span{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gris-color1);
+    background-image: url("resources/bg-pattern.png");
+    background-position: center;
+    width: 100%;
+    min-height: 100px;
+    border-bottom: 1.5px solid var(--gris-color2);
+    padding: var(--padding-propor) 0;
+    gap: 10px;
+}
+
+.header p{
+    max-width: 450px;
+    text-align: center;
+}
+
+.main{
+    box-sizing: border-box;
+    width: clamp(200px, 90%, 1200px);
+    margin: auto;
+    padding: var(--padding-propor);
+}
+
+.table{
+    max-width: 900px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.table__colum{
+    text-align: center;
+    padding: var(--padding-propor);
+}
+
+.table__colum span{
+    color: var(--blue1-color);
+    font-size: .7em;
+}
+.table__colum.c4H span{
+    color: var(--bg-color);
+    background-color: var(--blue1-color);
+    border-radius: var(--borderR-propor);
+    padding: 2px 4px;
+}
+
+.table__colum p{
+    color: var(--gris-color3);
+    font-size: .7em;
+}
+.table__colum.c4H p{
+    color: var(--bg-color);
+}
+
+.table__colum h2{
+    font-size: 2.2em;
+    margin: 2px 0;
+}
+
+
+
+tbody{
+    border-spacing: 0;
+    border-collapse: separate;
+    font-size: .8em;
+}
+
+.table__caracterist{
+    border-bottom: 1px solid var(--gris-color2);
+    border-top-left-radius: 10px;
+}
+.caracterist__item{
+    background-color: var(--gris-color1);
+    padding: 10px;
+    text-align: left;
+}
+
+.popular__plan{
+    background-color: #121826;
+    color: var(--bg-color);
+}
+
+
+/* .table__colum :is(h2,span,p){
+    display: none;
+} */
+
+
+
+
+.table td{
+    text-align: center;
+}
+
+.buy__buttom{
+    padding: calc(var(--borderR-propor) + 5px);
+    font-size: .8em;
+    color: var(--blue1-color);
+}
+
+.c4H{
+    border-radius: var(--borderR-propor) var(--borderR-propor) 0 0;
+}
+.buttom__popular_plan{
+    background: #7C4F1E;
+    border-radius: 0 0 var(--borderR-propor) var(--borderR-propor);
+    color: var(--bg-color);
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .--1c, .c2H{
+        display: none;
+    }
+}
+@media screen and (max-width: 730px) {
+    .--2c, .c3H{
+        display: none;
+    }
+}
