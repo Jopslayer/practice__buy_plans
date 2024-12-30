@@ -149,9 +149,18 @@ tbody{
     .--1c, .c2H{
         display: none;
     }
+    .table__colum{
+        padding: 20px;
+    }
 }
 @media screen and (max-width: 730px) {
     .--2c, .c3H{
         display: none;
+    }
+    .main{
+        padding: 10px 0;
+    }
+    .table__colum{
+        padding: 10px;
     }
 }
